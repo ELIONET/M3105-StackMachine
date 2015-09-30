@@ -29,6 +29,7 @@ public class CPU
 	public final static int POP		= 0x15;
 	
 	// TODO something is missing here...
+	public CPU(){};
 
 	public void run()
 	{
@@ -176,6 +177,26 @@ public class CPU
 		{
 			// TODO something is missing here...
 		}		
+	}
+
+	public void clearStacks() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setPC(int address) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void wireToIoSubsystem(IO ioSystem) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void wireToProgramMemory(Memory programMemory) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	// TODO something is missing here...
