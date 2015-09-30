@@ -1,0 +1,825 @@
+format 76
+"TP1Bis"
+  revision 2
+  modified_by 2 ""
+
+
+  
+  // class settings
+  default_attribute_visibility private default_relation_visibility private default_operation_visibility public
+  //class diagram settings
+  draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations no show_members_full_definition no show_members_visibility no show_members_stereotype no show_members_context no show_members_multiplicity no show_members_initialization no show_attribute_modifiers no member_max_width 127 show_parameter_dir yes show_parameter_name yes package_name_in_tab no class_drawing_mode natural drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers no show_relation_visibility no show_infonote no shadow yes show_stereotype_properties no
+  //use case diagram settings
+  package_name_in_tab no show_context no auto_label_position yes draw_all_relations yes class_drawing_mode actor shadow yes show_stereotype_properties no
+  //sequence diagram settings
+  show_full_operations_definition no write_horizontally yes class_drawing_mode natural drawing_language uml draw_all_relations yes shadow yes show_stereotype_properties no show_class_context_mode no show_msg_context_mode no
+  //collaboration diagram settings
+  show_full_operations_definition no show_hierarchical_rank no write_horizontally yes class_drawing_mode natural drawing_language uml package_name_in_tab no show_context no show_msg_context no draw_all_relations yes shadow yes show_stereotype_properties no
+  //object diagram settings
+   write_horizontally yes package_name_in_tab no show_context no auto_label_position yes draw_all_relations yes shadow yes show_stereotype_properties no
+  //component diagram settings
+  package_name_in_tab no show_context no auto_label_position yes draw_all_relations yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no
+  //deployment diagram settings
+  package_name_in_tab no show_context no write_horizontally yes auto_label_position yes draw_all_relations yes shadow yes
+  draw_component_as_icon no show_component_req_prov no show_component_rea no show_stereotype_properties no
+  //state diagram settings
+  package_name_in_tab no show_context no auto_label_position yes write_trans_label_horizontally yes show_trans_definition no draw_all_relations yes shadow yes
+  show_activities yes region_horizontally yes drawing_language uml show_stereotype_properties no
+  //activity diagram settings
+  package_name_in_tab no show_context no show_opaque_action_definition no auto_label_position yes write_flow_label_horizontally no draw_all_relations yes shadow yes
+  show_infonote yes drawing_language uml show_stereotype_properties no
+  
+  class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activitypartition_color transparent activityaction_color transparent parameterpin_color white 
+  font_size 8
+  diagram_format A4
+
+  image_root_dir ""
+
+  mark_for_import
+  
+  package_ref 134530 // src
+
+  classview 134658 "diag"
+    //class diagram settings
+    draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_context default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
+    //collaboration diagram settings
+    show_full_operations_definition default show_hierarchical_rank default write_horizontally default class_drawing_mode default drawing_language default package_name_in_tab default show_context default show_msg_context default draw_all_relations default shadow default show_stereotype_properties default
+    //object diagram settings
+     write_horizontally default package_name_in_tab default show_context default auto_label_position default draw_all_relations default shadow default show_stereotype_properties default
+    //sequence diagram settings
+    show_full_operations_definition default write_horizontally default class_drawing_mode default drawing_language default draw_all_relations default shadow default show_stereotype_properties default show_class_context_mode default show_msg_context_mode default
+    //state diagram settings
+    package_name_in_tab default show_context default auto_label_position default write_trans_label_horizontally default show_trans_definition default draw_all_relations default shadow default
+    show_activities default region_horizontally default drawing_language default show_stereotype_properties default
+    //class settings
+    //activity diagram settings
+    package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
+    show_infonote default drawing_language default show_stereotype_properties default
+    classdiagram 134530 "diag"
+      draw_all_relations yes hide_attributes no hide_operations no hide_getset_operations default show_members_full_definition yes show_members_visibility yes show_members_stereotype yes show_members_context uml show_members_multiplicity yes show_members_initialization yes show_attribute_modifiers yes member_max_width 0 show_parameter_dir no show_parameter_name default package_name_in_tab default class_drawing_mode class drawing_language uml show_context_mode no auto_label_position yes show_relation_modifiers yes show_relation_visibility yes show_infonote default shadow yes show_stereotype_properties default
+      size A2
+    end
+
+    class 135426 "MachineLauncher"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 136962 "main"
+	class_operation public explicit_return_type "void"
+	nparams 1
+	  param inout name "args" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0}[] ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 134914 // <dependency>
+	relation 134914 -_->
+	  a default
+	    classrelation_ref 134914 // <dependency>
+	  b parent class_ref 135170 // Machine
+      end
+    end
+
+    class 135298 "Program"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 137346 "Program"
+	public explicit_return_type ""
+	nparams 1
+	  param inout name "instructions" type class_ref 135042 // Instruction
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0}[] ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137474 "getInstructionAt"
+	public return_type class_ref 135042 // Instruction
+	nparams 1
+	  param in name "instructionNumber" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137602 "getInstructionCount"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 135170 "Machine"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      classrelation 134530 // cpu (<unidirectional association>)
+	relation 134530 --->
+	  a role_name "cpu" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 134530 // cpu (<unidirectional association>)
+	  b parent class_ref 134530 // CPU
+      end
+
+      classrelation 134658 // programMemory (<unidirectional association>)
+	relation 134658 --->
+	  a role_name "programMemory" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 134658 // programMemory (<unidirectional association>)
+	  b parent class_ref 134786 // Memory
+      end
+
+      operation 136578 "Machine"
+	public explicit_return_type ""
+	nparams 5
+	  param inout name "cpu" type class_ref 134530 // CPU
+	  param inout name "programMemory" type class_ref 134786 // Memory
+	  param inout name "expStack" type class_ref 134914 // Stack
+	  param inout name "callStack" type class_ref 134914 // Stack
+	  param inout name "ioSystem" type class_ref 134658 // IO
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136706 "loadProgram"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "program" type class_ref 135298 // Program
+	nexceptions 1
+	  explicit_exception "AddressOutOfBoundsException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136834 "executeProgram"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "address" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 135042 "Instruction"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 137346 "integ"
+	const_attribute public explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 137474 "obj"
+	const_attribute public explicit_type "Object"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 135554 "Instruction"
+	public explicit_return_type ""
+	nparams 2
+	  param in name "in" explicit_type "int"
+	  param inout name "object" explicit_type "Object"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135682 "getParams"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type}[] ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135810 "getOpCode"
+	public explicit_return_type "Object"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 134914 "Stack"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+    end
+
+    class 134786 "Memory"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      operation 137090 "write"
+	public explicit_return_type "void"
+	nparams 2
+	  param in name "currentAddress" explicit_type "int"
+	  param inout name "opCode" explicit_type "Object"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 137218 "getStartAddress"
+	public explicit_return_type "int"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 134658 "IO"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 137602 "in"
+	private explicit_type "BufferedReader"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 137730 "out"
+	private explicit_type "PrintStream"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 137858 "err"
+	private explicit_type "PrintStream"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 135938 "IO"
+	public explicit_return_type ""
+	nparams 3
+	  param inout name "inStream" explicit_type "InputStream"
+	  param inout name "outStream" explicit_type "OutputStream"
+	  param inout name "errStream" explicit_type "OutputStream"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136066 "displayRuntimeError"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "string" explicit_type "String"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136194 "displayProgramTermination"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136322 "read"
+	public explicit_return_type "int"
+	nparams 0
+	nexceptions 1
+	  explicit_exception "IOException"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 136450 "write"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "op" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 134530 "CPU"
+      visibility public 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      
+      attribute 134530 "HALT"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x00"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 134658 "PUSH"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x01"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 134786 "ADD"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x02"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 134914 "SUB"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x03"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135042 "MUL"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x04"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135170 "DIV"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x05"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135298 "MOD"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x06"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135426 "NEG"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x07"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135554 "LT"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x08"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135682 "LE"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x09"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135810 "GT"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x0A"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 135938 "GE"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x0B"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136066 "EQ"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x0C"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136194 "NE"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x0D"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136322 "IN"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x0E"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136450 "OUT"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x0F"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136578 "CALL"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x10"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136706 "RET"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x11"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136834 "JP"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x12"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 136962 "JZ"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x13"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 137090 "DUP"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x14"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      attribute 137218 "POP"
+	class_attribute const_attribute public explicit_type "int"
+	init_value " 0x15"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+      end
+
+      operation 134530 "CPU"
+	public explicit_return_type ""
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${synchronized}${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	comment " TODO something is missing here..."
+      end
+
+      operation 134658 "run"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134786 "clearStacks"
+	public explicit_return_type "void"
+	nparams 0
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 134914 "setPC"
+	public explicit_return_type "void"
+	nparams 1
+	  param in name "address" explicit_type "int"
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135042 "wireToIoSubsystem"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "ioSystem" type class_ref 134658 // IO
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135170 "wireToProgramMemory"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "programMemory" type class_ref 134786 // Memory
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135298 "wireToExpStack"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "expStack" type class_ref 134914 // Stack
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 135426 "wireToCallStack"
+	public explicit_return_type "void"
+	nparams 1
+	  param inout name "callStack" type class_ref 134914 // Stack
+	
+	preserve_java_body_indent java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${t0} ${p0}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 134786 // <unidirectional association>
+	relation 134786 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 134786 // <unidirectional association>
+	  b parent class_ref 134658 // IO
+      end
+
+      classrelation 135042 // <unidirectional association>
+	relation 135042 --->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 135042 // <unidirectional association>
+	  b parent class_ref 135298 // Program
+      end
+    end
+  end
+end
