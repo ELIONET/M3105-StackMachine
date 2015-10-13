@@ -18,5 +18,9 @@ public class Memory {
 	public int getStartAddress() {
 		return this.startAdress;
 	}
+	
+	public int getEndAddress() {
+		return this.endAdress;
+	}
 
 }

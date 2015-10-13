@@ -43,13 +43,13 @@ public class CPU
 			{
 				// TODO something is missing here...
 
-				int opCode;
+				int opCode = ;
 				// System.err.print("@" + this.programCounter + ": ");
 				switch (opCode)
 				{
 					case HALT:
 					{
-						// System.err.println("HALT");
+						System.err.println("HALT");
 						((IO) this.ioSystem).displayProgramTermination();
 						return;
 					}

@@ -1,7 +1,0 @@
-class Memory
-!!!137090.java!!!	write(in currentAddress : int, inout opCode : Object) : void
-		// TODO Auto-generated method stub
-		
-!!!137218.java!!!	getStartAddress() : int
-		// TODO Auto-generated method stub
-		return 0;

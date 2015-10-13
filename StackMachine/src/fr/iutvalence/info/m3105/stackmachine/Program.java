@@ -9,13 +9,11 @@ public class Program {
 	}
 
 	public Instruction getInstructionAt(int instructionNumber) {
-		// TODO Auto-generated method stub
-		return null;
+		return this.instruction[instructionNumber];
 	}
 
 	public int getInstructionCount() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.instruction.length;
 	}
 
 }

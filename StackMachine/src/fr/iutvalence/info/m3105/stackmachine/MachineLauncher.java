@@ -62,7 +62,9 @@ public class MachineLauncher
 		}
 		catch (InvalidParametersException e)
 		{
-			// Safely ignore this error, which is not one
+			if(programMemory.getStartAddress()<0 || programMemory.getStartAddress()>programMemory.getEndAddress())
+				// Safely ignore this error, which is not one
+			{System.err.println("Program memory error");}
 		}
 		
 		IO ioSystem = new IO(System.in, System.out, System.err);
