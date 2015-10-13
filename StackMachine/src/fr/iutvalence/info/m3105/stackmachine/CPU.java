@@ -28,6 +28,10 @@ public class CPU
 	public final static int DUP		= 0x14;
 	public final static int POP		= 0x15;
 	
+	private Object ioSystem;
+	
+	
+	
 	// TODO something is missing here...
 	public CPU(){};
 
@@ -39,13 +43,14 @@ public class CPU
 			{
 				// TODO something is missing here...
 
+				int opCode;
 				// System.err.print("@" + this.programCounter + ": ");
 				switch (opCode)
 				{
 					case HALT:
 					{
 						// System.err.println("HALT");
-						this.ioSystem.displayProgramTermination();
+						((IO) this.ioSystem).displayProgramTermination();
 						return;
 					}
 					case PUSH:
@@ -161,9 +166,11 @@ public class CPU
 				}
 			}
 		}
+		
 		catch (AddressOutOfBoundsException e)
 		{
-			// TODO something is missing here...
+			System.err.println("Program loading failure: program does not fit memory");
+			System.exit(1);// TODO something is missing here...
 		}
 		catch (IOException e)
 		{
